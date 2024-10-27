@@ -1,4 +1,4 @@
-package project_euler
+package problem_1
 
 import "core:fmt"
 import "core:math/linalg"
