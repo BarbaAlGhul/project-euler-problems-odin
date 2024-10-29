@@ -1,7 +1,7 @@
 package problem_2
 
 import "core:fmt"
-import "core:math/linalg"
+import "core:math"
 
 fibonacci_sequence :: proc(num: int) -> [dynamic]int {
     first := 1
@@ -21,7 +21,7 @@ fibonacci_sequence :: proc(num: int) -> [dynamic]int {
 even_fibonacci :: proc(array_f: []int) -> int {
     sum: int
     for i in 0..< len(array_f) {
-        if linalg.mod(f32(array_f[i]), 2) == 0 {
+        if math.mod(f16(array_f[i]), 2) == 0 {
             sum += array_f[i]
         }
     }
