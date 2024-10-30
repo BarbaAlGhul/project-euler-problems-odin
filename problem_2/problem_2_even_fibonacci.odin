@@ -14,6 +14,7 @@ fibonacci_sequence :: proc(num: int) -> [dynamic]int {
         second = current
         append(&return_array, current)
     }
+    defer delete(return_array)
     return return_array
 
 }
