@@ -22,7 +22,7 @@ fibonacci_sequence :: proc(num: int) -> [dynamic]int {
 even_fibonacci :: proc(array_f: []int) -> int {
     sum: int
     for i in 0..< len(array_f) {
-        if math.mod(f16(array_f[i]), 2) == 0 {
+        if array_f[i] %% 2 == 0 {
             sum += array_f[i]
         }
     }
